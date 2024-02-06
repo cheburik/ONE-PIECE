@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&family=Lacquer&family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;700&family=Mina:wght@400;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("./images/one-piece-860x484.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav a img{
+    width: 100px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lora', sans-serif;
+}
+.textbox{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top:50%;left: 50%;
+    transform: translate( -50%, -50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 62px;
+    color: rgb(246, 34, 76);
+    font-family: 'Mina', sans-serif;
+}
+.textbox p{
+    font-size: 17px;
+    color: white;
+    margin: 10px 0 40px;
+    font-family: 'Lora', sans-serif;
+}
+.btn{
+display: inline-block;
+text-decoration: none;
+color: white;
+border: 1px solid white;
+padding: 12px 34px;
+position: relative;
+cursor: pointer;
+font-size: 20px;
+}
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color:rgb(206, 40, 40);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu ul li:hover::after{
+    width: 100%;
+}
+.btn:hover{
+    border: 1px solid rgb(246, 34, 76);
+    background-color: rgb(246, 34, 76);
+    transition: 1.5s;
+}
+.youtube{
+    text-align: center;
+    margin: auto;
+    padding-top: 35px;
+    background-color: rgb(255, 255, 255);
+}
+h2{
+    font-size: 40px;
+    color: lightskyblue;
+    font-family: 'Mina', sans-serif;
+    font-weight: 700;
+}
+p{
+    font-size: 23px;
+    padding: 10px;
+    color: orange;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0;
+    background-color: rgb(2, 3, 0);
+    margin-top: 50px;
+}
+footer h2{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+footer p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.icons i{
+    font-size: 25px;
+    padding: 18px 0;
+    margin: 0 13px;
+    color: rgb(218, 105, 105);
+    cursor: pointer;
+}
+.sub-header{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("./images/one\ piece\ cartinka.jpg");
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1{
+    margin-top: 130px;
+    color: rgb(248, 144, 130);
+    font-size: 45px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-col{
+    padding: 30px 2px;
+    flex-basis: 45%;
+}
+.about-col img{
+    width: 100%;
+}
+.aboutus{
+    width: 80%;
+    margin: 50px auto;
+
+}
+.about-col p{
+    font-size: 15px;
+    color: black;
+    padding: 15px 0;
+    font-family: 'Libre Baskerville';
+    line-height: 22px;
+}
+.about-col h1{
+color: rgb(111, 195, 65);
+font-size: 24px;
+}
+.about-col a{
+    color: black;
+    border: black 1px solid;
+}
+.mugiwara{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5%;
+}
+.mugiwara-card{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.mugiwara-card img{
+    width: 100%;
+    display:block;
+}
+.label{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0%;
+}
+.label:hover{
+    background-color: rgba(162, 231, 78, 0.43);
+    transition: 0.5s;
+}
+.label h3{
+    color: rgb(42, 98, 239);
+    font-size: 26px;
+    width: 100%;
+    font-weight: 500;
+    bottom: 0%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.label:hover h3{
+    bottom: 50%;
+    transition: 0.5s;
+}
+.Blog{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blogleft{
+    flex-basis: 65%;
+}
+.blogleft img{
+    width: 100%;
+}
+.blogleft h2{
+    color: black;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.blogleft p{
+    padding: 0%;
+    color: rgb(199, 141, 141);
+    font-size: 18px;
+}
+.comment-box{
+border: 1px solid grey;
+margin: 50px 0;
+padding: 10px 20px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-box input, .comment-box textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    background-color: aliceblue;
+    box-sizing: border-box;
+    outline: none;
+}
+.comment-box button{
+    color: black;
+    border: black 1px solid;
+}
+.blog-right{
+    flex-basis: 32%;
+}
+.blog-right h3{
+    background: red;
+    color: white;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.blog-right div{
+    display: flex;
+    justify-content: space-between;
+    color: lightgray;
+    padding: 8px;
+}
+.blog-right div:hover{
+    background: rgb(68, 77, 211);
+    transition: 1s;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+flex-basis: 48%;
+margin-bottom: 50px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div i{
+    font-size: 28px;
+    color: rgb(255, 64, 64);
+    margin: 10px;
+    margin-right: 40px;
+}
+.contact-col div p{
+    padding: 0;
+    color: black;
+    font-size: 18px;
+}
+.contact-col div h5{
+    color: rgb(131, 116, 116);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    outline: none;
+    box-sizing: border-box;
+}
+.contact-col .btn{
+    color: black;
+    border: 1px solid rgb(255, 64, 64) ;
+    font-size: 14px;
+    font-weight: 400;
+}
+@media(max-width: 700px){
+.row{
+    flex-direction: column;
+}
+.menu{
+    position: fixed;
+    background-color: rgb(67, 67, 241);
+    height: 100vh;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+.menu ul li{
+    display: block;
+}
+nav .fa-x, nav .fa-bars{
+    color: azure;
+    display: block;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.menu ul{
+    padding: 30px;
+}
+.textbox h1{
+    font-size: 30px;
+}
+.textbox p{
+    font-size: 15px;
+}
+.btn:focus{
+    border: 1px solid rgb(246, 34, 76);
+    background-color: rgb(246, 34, 76);
+    transition: 1.5s;  
+}
+}
+@media(max-width: 320px){
+.youtube h2{
+    font-size: 22px;
+}
+.youtube p{
+    font-size: 16px;
+}
+.about-col p{
+font-size: 10px;
+}
+.sub-header h1{
+    margin-top: 80px;
+}
+.location iframe{
+    height: 222px;
+}
+}
